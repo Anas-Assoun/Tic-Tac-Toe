@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                        
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic-Tac-Toe / ASSOUN</title>
+</head>
+<body>
+
+    <img src="./assets/o.svg" alt="" srcset="" style="display: none;" load="lazy">
+    <img src="./assets/x.svg" alt="" srcset="" style="display: none;" load="lazy">
+
+    <div class="loginHandler">
+        <form>
+            <div class="form-heading">
+                <img src="./assets/tic-tac-toe.png" alt="">
+            <h1>Tic - Tac - Toe </h1>
+            </div>
+            <label for="username">Username</label><br>
+            <input type="text" name="" id="username" class="user-input" placeholder="Type an username here...">
+            <label for="username">Choose your avatar</label><br>
+            <div class="avatarContainer">
+                <span class="avatar" id="1"><img src="/assets/avatar1.png" alt=""></span>
+                <span class="avatar" id="2"><img src="/assets/avatar2.png" alt=""></span>
+                <span class="avatar" id="3"><img src="/assets/avatar3.png" alt=""></span>
+                <span class="avatar" id="4"><img src="/assets/avatar4.png" alt=""></span>
+                <span class="avatar" id="5"><img src="/assets/avatar5.png" alt=""></span>
+                <span class="avatar" id="6"><img src="/assets/avatar6.png" alt=""></span>
+                <span class="avatar" id="7"><img src="/assets/avatar7.png" alt=""></span>
+                <span class="avatar" id="8"><img src="/assets/avatar8.png" alt=""></span>
+            </div>
+            <div class="btn-container">
+            <button type="submit" class="btn">Start Game</button>
+            </div>
+            <!--<div class="rules">
+                 <p onclick= "alert('gtgtgtg');">Show rules again ?</p> 
+            </div>-->
+        </form>
+    </div>
+    <div class="container">
+
+        <h1>Let's play !</h1>
+        <div class="restart" onclick=window.location.reload()>
+            <img src="./assets/restart.png" alt="" srcset="">
+            <p >Restart</p>
+        </div>
+
+        <div class="gameContainer">
+            <div class="playersHandler">
+                <div class="profile player">
+                    <img src="" alt="" srcset="">
+                    <p class="username"></p>
+                </div>
+                <div class="scores">
+                    <div id="player0" class="playerScore">0</div>
+                    <div id="player1" class="ordiScore">0</div>
+                </div>
+                <div class="profile ordi">
+                    <p class="username">Computer</p>
+                    <img src="./assets/computer_avatar.png" alt="" srcset="">
+                </div>
+            </div>
+
+            <div class="insideGameHandler">
+                <div class="x_mark marks">X</div>
+                <div class="theGame">
+                    <div class="round">Round : <span> 1</span></div>
+                    <canvas></canvas>
+                </div>
+                <div class="o_mark marks">0</div>
+            </div>
+
+            <!-- <h1>Winner!</h1>
+            <div class="winner">
+                <img src="./assets/trophy.png" alt="">
+
+                <div class="theWinner">
+                    <img src="./assets/avatar3.png" alt="">
+                    <p>player</p>
+                </div>
+
+                <img src="./assets/trophy.png" alt="">
+            </div> -->
+        </div>
+
+
+        <!-- <canvas></canvas> -->
+
+
+        <!-- <h1 id="player0">player0 score : <span>0</span></h1>
+        <h1 id="player1">player1 score : <span>0</span></h1>
+        <h1 id="round">round : <span>1</span></h1> -->
+    </div>
+    <script>
+
+        //if(localStorage.length<1){}
+            alert("\n" + "Before you start, here are the rules of the game :" + "\n" + " " + "\n" + "- Two players (You & Computer) play against each other using a 3×3 board. " + "\n" + "- You use X, and the computer uses O. " + "\n" + "- For each round the first player to align 3 of their identical symbols (horizontally, vertically, or diagonally) wins the game."  + "\n" + "- After 3 rounds, the final winner will appear !" + "\n" + " " + "\n" +"Tap OK to Continue..." )
+        
+    </script>
+    <script src="./lodash.js"></script> 
+    <script src="./app.js"></script>
+    <script src="./login.js"></script>
+    <script src="./player.js"></script>
+    <script src="./playerOrdi.js"></script>
+    <script src="./board.js"></script>
+    <script src="./progress.js"></script>
+
+
+
+
+
+
+</body>
+</html>
